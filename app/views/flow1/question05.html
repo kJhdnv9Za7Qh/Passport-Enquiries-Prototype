@@ -1,0 +1,42 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+<a href="question04" class="no-back-link">Back</a>    <span class="example-back-link">Question 5 of 6</span>
+  
+  <form action="question06" method="get" class="form" name="certificate">
+
+
+    <!-- Certificate selection -->
+
+
+   <!-- Contact details -->
+   <div class="form-group">
+      <label class="form-label-bold" for="full-name">What is your name?</label>
+    </div>
+    <div class="form-group">
+    <label class="form-label" for="first-name-2">Full name</label>
+    <input class="form-control" id="first-name-2" type="text" name="first-name-2" required>
+  </div>
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}

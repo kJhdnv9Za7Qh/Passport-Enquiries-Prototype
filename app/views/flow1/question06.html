@@ -1,0 +1,46 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+<a href="question05" class="no-back-link">Back</a>    <span class="example-back-link">Question 5 of 6</span>
+  
+  <form action="confirmation" method="get" class="form" name="certificate">
+
+
+    <!-- Certificate selection -->
+
+
+   <!-- Contact details -->
+   <div class="form-group">
+      <label class="form-label-bold" for="full-name">What is your email address?</label>
+    </div>
+
+  <div class="form-group">
+    <label class="form-label" for="email-address">Email address</label>
+    <input class="form-control" id="email-address" type="text" name="email-address" required>
+  </div>
+     <p class="form-hint">You must use the same email address as you used in your application</p>
+
+  </label>
+
+<br>
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}

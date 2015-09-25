@@ -1,0 +1,47 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+
+  <form action="confirmation" method="get" class="form" name="certificate">
+
+
+ <a href="question10" class="no-back-link">Back</a>    <span class="example-back-link">Question 11 of 11</span>
+
+
+
+   <!-- Contact details -->
+   <div class="form-group">
+      <label class="form-label-bold" for="full-name">What is your contact telephone number?</label>
+    </div>
+    <div class="form-group">
+
+
+<div class="form-group">
+    <label class="form-label" for="telephone-number">Contact telephone number
+    </label>
+    <input class="form-control" id="telephone-number" type="numerals" name="telephone-number" required>
+  </div>
+
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}

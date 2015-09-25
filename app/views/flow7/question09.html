@@ -1,0 +1,54 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+
+  <form action="confirmation" method="get" class="form" name="certificate">
+
+
+ <a href="question08" class="no-back-link">Back</a>    <span class="example-back-link">Question 9 of 10</span>
+
+
+
+   <!-- Contact details -->
+   <div class="form-group">
+      <label class="form-label-bold" for="full-name">What is your passport application reference number?</label>
+    </div>
+ 
+        <div class="form-group">
+          <label class="form-label" for="col-number">Passport application reference number</label>
+          <input type="text" class="form-control" id="account-number" name="account-number">
+        </div>
+        <div class="form-group">
+          <details>
+            <summary><span class="summary">Help finding your passport application reference number</span></summary>
+            <div class="panel-indent">
+              <p>
+lsdjfkkljashdf lkjh alskdjfh lkjsdhfl kasjdhfl aksjdhf laksjhdf
+              </p>
+            </div>
+          </details>
+        </div>
+
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}

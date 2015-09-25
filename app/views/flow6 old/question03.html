@@ -1,0 +1,103 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <form action="question04" method="get" class="form" name="certificate">
+
+ <a href="question02" class="no-back-link">Back</a>    <span class="example-back-link">Question 3 of 7</span>
+
+<div class="form-group">
+      <label class="form-label-bold" for="full-name">What are the applicant's details?</label>
+    </div>
+
+
+
+
+
+
+<!-- Contact details -->
+    <div class="form-group">
+    <label class="form-label" for="first-name-2">Applicant's full name</label>
+    <input class="form-control" id="first-name-2" type="text" name="first-name-2" required>
+  </div>
+
+
+
+    <div class="form-group">
+      <label class="form-label" for="full-name">Applicant's date of birth</label>
+   
+      <fieldset>
+        <div class="form-date">
+
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31" name="order-date-day" required>
+          </div>
+
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12" name="order-date-month" required>
+          </div>
+
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2015" name="order-date-year" required>
+          </div>
+        </div>
+
+      </fieldset>
+      <p class="form-hint">For example, 31 10 1974</p>
+    </div>
+
+
+</div>
+
+    </div>
+
+
+
+
+
+  <div class="form-group">
+    <label class="form-label" for="email-address">Applicant's email address</label>
+    <input class="form-control" id="email-address" type="text" name="email-address" required>
+  
+  </div>
+
+        <div class="form-group">
+          <label class="form-label" for="col-number">Passport application reference number</label>
+          <input type="text" class="form-control" id="account-number" name="account-number">
+        </div>
+        <div class="form-group">
+          <details>
+            <summary><span class="summary">Help finding your passport application reference number</span></summary>
+            <div class="panel-indent">
+              <p>
+lsdjfkkljashdf lkjh alskdjfh lkjsdhfl kasjdhfl aksjdhf laksjhdf
+              </p>
+            </div>
+          </details>
+        </div>
+
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}
